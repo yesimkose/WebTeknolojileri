@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Yeşim KÖSE</title>
+    <meta charset="utf-8">
+    <meta name="title" content="Yeşim KÖSE">
+    <meta name="keywords" content="Web site,Html, Css, Hakkımda, Şehirim">
+    <meta name="description" content="Web Teknolojileri Dersi İçin Web Site">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="baslik">
+            <h1>Yeşim KÖSE</h1>
+            <h2>Web Teknolojileri</h2>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <a href="about.html" title="Hakkımda"><li>Hakkımda</li></a>
+            <a href="profile.html" title="Özgeçmiş"><li>Özgeçmiş</li></a>
+            <a href="my-city.html" title="Şehrim"><li>Şehrim</li></a>
+            <a href="mirasimiz.html" title="Mirasımız"><li>Mirasımız</li></a>
+            <a href="contact.html" title="İletişim"><li>İletişim</li></a>
+        </ul>
+    </nav>
+    
+    <article>
+       
+       <script>
+function isValid(frm)
+{
+    var adi = frm.ad.value;
+    var soyadi = frm.soyad.value;
+    var email = frm.email.value;
+    var atpos=email.indexOf("@");
+    var dotpos=email.lastIndexOf(".");
+
+    
+}
+    </script>
+        <div class="icerik">
+           
+            <h3>İletişim Formu</h3>
+            <form action="action_page.php" onsubmit="return isValid(this)" method="post">
+                <p>Ad: <input type="text" name="ad" id="ad" placeholder="Adınız"></p>
+                <p>Soyad: <input type="text" name="soyad" id="soyad" placeholder="Soyadınız"></p>
+                <p>E-mail: <input type="email" name="email" id="email" placeholder="E-mail adresiniz"></p>
+                <p> Konu: 
+                   <select>
+                    <option>Seçiniz</option>
+                    <option>Şikayet</option>
+                    <option>Öneri</option>
+                    <option>Teşekkür</option>
+                    <option>Diğer</option>
+                   </select>
+                </p>
+                <p>
+                    Cinsiyet: 
+                    <input type="radio" name="cinsiyet"> Kadın 
+                    <input type="radio" name="cinsiyet"> Erkek 
+                </p>
+                <textarea name="mesaj" style="width: 700px; height: 250px;"></textarea><br>
+                
+                <button type="submit" onclick="formKontrol()">Gönder</button>
+                <button type="reset">Temizle</button>
+            </form>
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+</html>
